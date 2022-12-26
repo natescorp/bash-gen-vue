@@ -4,7 +4,7 @@
 set -e
 
 # сборка
-npm run build --base=/bash-gen-vue/
+npm run build
 
 # переход в каталог сборки
 cd dist
@@ -20,6 +20,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # если вы публикуете по адресу https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:natescorp/bash-gen-vue.git master:gh-pages
+git push -f https://github.com/natescorp/bash-gen-vue.git master:gh-pages
 
 cd -
