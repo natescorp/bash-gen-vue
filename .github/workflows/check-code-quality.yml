@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - main
-    branches-ignore:
-      - gh-pages
+      - develop
+      - 'release/**'
+      - 'hotfix/**'
   pull_request:
+    types: [opened, edited, reopened]
   workflow_dispatch:
 jobs:
   check-lint:
